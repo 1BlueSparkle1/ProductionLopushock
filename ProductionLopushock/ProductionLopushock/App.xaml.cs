@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductionLopushock.Components;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -11,7 +12,9 @@ namespace ProductionLopushock
     /// <summary>
     /// Логика взаимодействия для App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : System.Windows.Application
     {
+        public static Ekz_WSREntities db = new Ekz_WSREntities();
+        public static int list = new int();
     }
 }

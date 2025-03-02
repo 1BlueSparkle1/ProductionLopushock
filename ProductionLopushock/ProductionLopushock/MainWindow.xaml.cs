@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProductionLopushock.Components;
+using ProductionLopushock.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,13 @@ namespace ProductionLopushock
         public MainWindow()
         {
             InitializeComponent();
+            Navigations.mainWindow = this;
+            Navigations.NextPage(new ListProductPage());
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigations.NextPage(new CreateEditProductPage(new Product()));
         }
     }
 }

@@ -1,0 +1,21 @@
+﻿<Page x:Class="ProductionLopushock.Pages.UpdatePricePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProductionLopushock.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UpdatePricePage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="40">Изменить на:</TextBlock>
+            <TextBox x:Name="PriceTb" Height="40" PreviewTextInput="PriceTb_PreviewTextInput"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="CancelBtn" Padding="5" Margin="10" Click="CancelBtn_Click" Background="#FFEDEDED">Отмена</Button>
+                <Button x:Name="SaveBtn" Padding="5" Margin="10" Click="SaveBtn_Click" Background="#FFA5E887">Сохранить</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

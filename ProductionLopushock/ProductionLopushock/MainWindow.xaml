@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProductionLopushock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Lopushock" Height="600" Width="900">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+
+
+        <Image Source="Resources/Лопушок.png" Margin="10" HorizontalAlignment="Left"></Image>
+        <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF00CC76">Лопушок</TextBlock>
+        <Button x:Name="AddBtn" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="10" Margin="10" Background="#FFA5E887" Click="AddBtn_Click">Добавить продукт</Button>
         
+        
+        <Frame x:Name="mainFrame" Grid.Row="1" NavigationUIVisibility="Hidden">
+
+        </Frame>
     </Grid>
 </Window>

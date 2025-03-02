@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="72c568dec83a4e678a21120399e780ec" Name="Diagram1">
+        <EntityTypeShape EntityType="Ekz_WSRModel.Adress" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Agent" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Application" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Change" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.ChangeMaterial" Width="1.5" PointX="10.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.ChangePeople" Width="1.5" PointX="10.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Employee" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Material" Width="1.5" PointX="8.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.MinCost" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Movements" Width="1.5" PointX="12.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.NFCCard" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.PointSale" Width="1.5" PointX="8.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Priority" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Product" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Remains" Width="1.5" PointX="10.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Shop" Width="1.5" PointX="6" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Standard" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Status" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Supplier" Width="1.5" PointX="11.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Supply" Width="1.5" PointX="13.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.TypeAgent" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.TypeMaterial" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.TypeProduct" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.TypeSupplier" Width="1.5" PointX="9" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Unit" Width="1.5" PointX="6" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Warehouse" Width="1.5" PointX="8.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ekz_WSRModel.Workshop" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Agent_Adress" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Agent_TypeAgent" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Application_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_PointSale_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Priority_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Application_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Application_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Change_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Change_Workshop" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_ChangeMaterial_Change" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_ChangePeople_Change" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_ChangeMaterial_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_ChangePeople_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_NFCCard_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Material_TypeMaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Material_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Remains_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Supply_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_MinCost_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Movements_NFCCard" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_PointSale_Shop" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Product_Standard" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Product_TypeProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Remains_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Supplier_TypeSupplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Ekz_WSRModel.FK_Supply_Supplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
